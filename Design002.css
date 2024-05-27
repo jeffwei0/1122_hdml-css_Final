@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #333; /* 深灰色背景 */
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2; /* 保持表單在最上層 */
+}
+
+.form-wrapper input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-wrapper button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shape-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* 確保形狀按鈕與其他按鈕有間距 */
+}
+
+.container .block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #444;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.block.circle {
+    border-radius: 50%;
+}
+
+.block.white {
+    background-color: #fff;
+}
+
+.block.lightblue {
+    background-color: #add8e6;
+}
+
+.block.darkgrey {
+    background-color: #555;
+}

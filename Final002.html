@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1122_期末專案</title>
+    <link rel="stylesheet" href="Design002.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="confirmAction();">Confirm</button>
+            <button onclick="cancelAction();">Cancel</button>
+            <div class="shape-buttons">
+                <button onclick="setShape('circle');">圓形</button>
+                <button onclick="setShape('square');">正方形</button>
+                <button onclick="setShape('random');">隨機</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="Design002.js"></script>
+</body>
+</html>
