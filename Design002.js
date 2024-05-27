@@ -3,15 +3,15 @@ let currentShape = 'random';
 function createBlocks(num) {
     const container = document.querySelector(".container");
     const formWrapper = document.querySelector(".form-wrapper");
-    container.innerHTML = ''; // 清空現有的 blocks
-    container.appendChild(formWrapper); // 保留表單
+    container.innerHTML = ''; 
+    container.appendChild(formWrapper); 
 
     const colors = ['white', 'lightblue', 'darkgrey'];
     
     for (let i = 0; i < num; i++) {
         let block = document.createElement('div');
         block.classList.add('block');
-        block.classList.add(colors[i % colors.length]); // 分配顏色
+        block.classList.add(colors[i % colors.length]); 
         if (currentShape === 'circle' || (currentShape === 'random' && Math.random() > 0.5)) {
             block.classList.add('circle');
         } else {
@@ -23,8 +23,8 @@ function createBlocks(num) {
 
 function setShape(shape) {
     currentShape = shape;
-    createBlocks(45); // 重新生成45個圖案
-    generate(); // 按下形狀按鈕後立即觸發動畫效果
+    createBlocks(45); // 生成45個圖案
+    generate(); // 按鈕後立即觸發動畫效果
 }
 
 function circle() {
@@ -48,15 +48,21 @@ function generate() {
 }
 
 function confirmAction() {
-    generate(); // 圖案變化
-    alert("Confirmed!"); // 示例操作
+    generate(); 
+    alert("Confirmed!"); 
 }
 
 function cancelAction() {
-    circle(); // 圖案變化
-    alert("Cancelled!"); // 示例操作
+    circle(); 
+    alert("Cancelled!"); 
 }
 
-// 初始化調用，生成45個 block
+function cancelAction() {
+    document.getElementById('username').value = ''; // 清空用户名输入
+    document.getElementById('password').value = ''; // 清空密码输入
+    alert("Cancelled!"); 
+}
+
+// 生成45個 block
 createBlocks(45);
 generate();

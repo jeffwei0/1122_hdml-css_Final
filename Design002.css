@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #333; /* 深灰色背景 */
+    background-color: #5a5d65; /* 背景色 */
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 2; /* 保持表單在最上層 */
+    z-index: 2; /* 表單最上層 */
 }
 
 .form-wrapper input {
@@ -38,7 +38,7 @@ body {
 .shape-buttons {
     display: flex;
     gap: 10px;
-    margin-top: 10px; /* 確保形狀按鈕與其他按鈕有間距 */
+    margin-top: 10px; /* 按鈕間距 */
 }
 
 .container .block {
@@ -54,13 +54,13 @@ body {
 }
 
 .block.white {
-    background-color: #fff;
+    background-color: #92afd6;
 }
 
 .block.lightblue {
-    background-color: #add8e6;
+    background-color: #b1cce7;
 }
 
 .block.darkgrey {
-    background-color: #555;
+    background-color: #c8dae8;
 }
