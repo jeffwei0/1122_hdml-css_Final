@@ -23,8 +23,8 @@ function createBlocks(num) {
 
 function setShape(shape) {
     currentShape = shape;
-    createBlocks(45); // 生成45個圖案
-    generate(); // 按鈕後立即觸發動畫效果
+    createBlocks(55);
+    generate(); 
 }
 
 function circle() {
@@ -58,11 +58,11 @@ function cancelAction() {
 }
 
 function cancelAction() {
-    document.getElementById('username').value = ''; // 清空用户名输入
-    document.getElementById('password').value = ''; // 清空密码输入
+    document.getElementById('username').value = ''; 
+    document.getElementById('password').value = ''; 
     alert("Cancelled!"); 
 }
 
-// 生成45個 block
-createBlocks(45);
+
+createBlocks(55);
 generate();
